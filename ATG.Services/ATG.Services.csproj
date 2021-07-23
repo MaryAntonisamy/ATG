@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ATG.Data\ATG.Data.csproj" />
+    <ProjectReference Include="..\ATG.Libraries\ATG.Libraries.csproj" />
+    <ProjectReference Include="..\ATG.Repositories\ATG.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

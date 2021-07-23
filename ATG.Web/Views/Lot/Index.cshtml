@@ -1,0 +1,63 @@
+﻿@using ATG.Data.Models;
+
+@model Lot
+
+<head>
+    <style>
+        #lots {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #lots td, #lots th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #lots tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #lots tr:hover {
+                background-color: #ddd;
+            }
+
+            #lots th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+    </style>
+</head>
+
+<div class="">
+    <h2>Lot details</h2>
+
+    <table id="lots">
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Is Archived</th>
+
+        
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.IsArchived)
+        </td>
+    </tr>
+
+        
+        </table>
+
